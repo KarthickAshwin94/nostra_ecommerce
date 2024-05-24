@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Nostra</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="container_main">
+        <div class=" text-white flex justify-center gap-10 " id="pop_up_ad" style="background-color: #1D232C;">
+            <h3 class="font-bold " >Sign Up and GET 20% OFF for your first Order </h3>
+            <p class="font-bold cursor-pointer " id="close">X</p>
+        </div>
+        <!-- NavBar -->
+        <div class="flex gap-96 p-2">
+            <h3 class="ml-2 font-bold" style="color:#1D232C">Nostra</h3>
+            <ul class="flex gap-10 " style="color:#1D232C">
+                <li class="hover:underline cursor-pointer" ><a href="index.html">Home</a></li>
+                <li class="hover:underline cursor-pointer"><a href="#new_arrival">New Arrival</a></li>
+                <li class="hover:underline cursor-pointer"><a href="#most_wanted">Most Wanted</a></li>
+                <li class="hover:underline cursor-pointer"><a href="Collections.html">Collections</a></li>
+                <li class="hover:underline cursor-pointer"><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Now we need to create a karosel which is basically a image slider -->
+      <div class="relative m-2 ">
+        <img src="images/style1.avif" alt="Sorry the image can't be displayed" class="h-72 w-full rounded-md">
+        <div class="gray_layer bg-gray-500 absolute z-10 h-72 w-full top-0 bg-opacity-90">
+            <h1 class="font-bold text-4xl text-white absolute top-10 left-72">Level Up Your style with our</h1>
+            <p class="font-bold text-white absolute top-20 right-96">Summer Collections</p>
+            <button class=" flex  text-black bg-white rounded-sm absolute top-28 left-2/4">Shop Now<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+              </button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 text-white font-bold absolute top-24 cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 text-white font-bold absolute top-24 right-0 cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+        </div>
+      </div>
+      <!-- Brands section -->
+      <p class="font-bold text-xl m-2">Brands</p>
+      <div class="flex justify-between m-4">
+        
+        <div>
+            <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/icons/behance.png" alt="Puma" class="w-14">
+            <p class="font-bold text-center">Puma</p>
+        </div>
+        <div>
+            <img src="	https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/icons/adidas.png" alt="Adidas" class="w-14">
+            <p class="font-bold text-center">Adidas</p>
+        </div>
+        <div>
+            <img src="	https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/icons/simple.png" alt="Simple" class="w-14">
+            <p class="font-bold text-center">Simple</p>
+        </div>
+        <div>
+            <img src="	https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/icons/leaves.png" alt="Leaves" class="w-14">
+            <p class="font-bold text-center">Leaves</p>
+        </div>
+        <div>
+            <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/icons/behance.png" alt="Behance" class="w-14">
+            <p class="font-bold text-center">Behance</p>
+        </div>
+        <div>
+            <img src="	https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/icons/twitch.png" alt="Twitch" class="w-14">
+            <p class="font-bold text-center">Twitch</p>
+        </div>
+        <div>
+            <img src="	https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/icons/leaves.png" alt="Leaves" class="w-14">
+            <p class="font-bold text-center">Leaves</p>
+        </div>
+      </div>
+
+      <!-- Customer Experiences1 -->
+      <div class="flex m-2 ">
+        <div class="flex-col text-xl">
+            <p class="font-bold text-xl">We Provide Best</p>
+            <p class="font-bold">Customer Experiences</p>
+          </div>
+          <p class="ml-72">|| We ensure that our customer have the best shopping experience</p>
+      </div>
+      <!-- Customer Experience2  -->
+      <div class="flex gap-4 m-2">
+        <div class="bg-blue-100 h-32 w-1/4 rounded-md pb-10 ">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check ml-4 "></i>
+              <p class="text-sm font-bold" >Original Products</p>
+              <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        <div class="bg-blue-100 h-32 w-1/4  rounded-md">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile ml-4 "></i>
+              <p class="text-sm font-bold">Satisfaction Guarantee</p>
+              <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+              
+        </div>
+        <div class="bg-blue-100 h-32 w-1/4  rounded-md">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom ml-4 "></i>
+            <p class="text-sm font-bold">New Arrival Everyday</p>
+            <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        <div class="bg-blue-100 h-32 w-1/4  rounded-md">
+            <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast ml-4 "></i>
+            <p class="text-sm font-bold">Fast and Free Shipping</p>
+            <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+      </div>
+      <!-- New Arrivals Section -->
+      <h1 class="font-bold text-xl ml-4" id="new_arrival">New Arrivals</h1>
+      <div class="flex gap-10 m-4 ">
+        <div class="relative w-52 h-52 rounded-md ">
+            <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f1.jpg" alt="T-Shirt" class="absolute w-full h-full object-cover z-20 ">
+            <div class="absolute inset-0 bg-black bg-opacity-30 z-30 rounded-md">
+                <button class="bg-white text-black p-2 roundes-sm absolute top-20 left-14 flex ">Shop Now<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  </button>
+            </div>
+        </div>
+        <div class="relative w-52 h-52 rounded-md">
+            <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f7.jpg "class="absolute w-full h-full object-cover z-20 " >
+            <div class="overlay inset-0 bg-black bg-opacity-30 absolute z-20 rounded-md">
+                <button class="absolute bg-white text-black rounded-sm p-2 top-20 left-14 flex">Shop Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  </button>
+            </div>
+
+        </div>
+        <div class="relative w-52 h-52 rounded-md  ">
+            <img src="	https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/n1.jpg " class="absolute w-full h-full object-cover z-20 ">
+            <div class="overlay inset-0 bg-black bg-opacity-30 absolute z-20 rounded-md">
+                <button class="absolute bg-white text-black rounded-sm p-2 top-20 left-14 flex">Shop Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  </button>
+            </div>
+        </div>
+        <div class="relative w-52 h-52 rounded-md ">
+            <img src="	https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/n7.jpg" class="absolute w-full h-full object-cover z-20 ">
+            <div class="overlay inset-0 bg-black bg-opacity-30 absolute z-20 rounded-md">
+                <button class="absolute bg-white text-black rounded-sm p-2 top-20 left-14 flex">Shop Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  </button>
+            </div>
+        </div>
+      </div>
+      <!-- Most wanted section  -->
+      <h1 class="font-bold text-xl ml-4" id="most_wanted">Most Wanted</h1>
+      <div class="w-full max-w-4xl overflow-x-auto flex space-x-4 p-4 snap-x snap-mandatory">
+        <div class="relative w-48 h-48 flex-shrink-0 snap-start">
+          <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f1.jpg" alt="T-Shirt 1" class="w-full h-full object-cover">
+          <button class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            Shop Now
+          </button>
+        </div>
+        <div class="relative w-48 h-48flex-shrink-0 snap-start">
+          <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f2.jpg" alt="T-Shirt 2" class="w-full h-full object-cover">
+          <button class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            Shop Now
+          </button>
+        </div>
+        <div class="relative w-48 h-48 flex-shrink-0 snap-start">
+          <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f3.jpg" alt="T-Shirt 3" class="w-full h-full object-cover">
+          <button class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            Shop Now
+          </button>
+        </div>
+        <div class="relative w-48 h-48 flex-shrink-0 snap-start">
+          <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f4.jpg" alt="T-Shirt 4" class="w-full h-full object-cover">
+          <button class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            Shop Now
+          </button>
+        </div>
+        <div class="relative w-48 h-48 flex-shrink-0 snap-start">
+            <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f3.jpg" alt="T-Shirt 3" class="w-full h-full object-cover">
+            <button class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              Shop Now
+            </button>
+          </div>
+          <div class="relative w-48 h-48 flex-shrink-0 snap-start">
+            <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f1.jpg" alt="T-Shirt 1" class="w-full h-full object-cover">
+            <button class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              Shop Now
+            </button>
+          </div>
+          <div class="relative w-48 h-48 flex-shrink-0 snap-start">
+            <img src="https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/products/f3.jpg" alt="T-Shirt 3" class="w-full h-full object-cover">
+            <button class="absolute inset-0 bg-black bg-opacity-50 text-white flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              Shop Now
+            </button>
+          </div>
+      </div>
+      <!-- Limited Offer Section -->
+      <div class="limited_offer  flex h-72 w-full text-white m-2 " style="background-color: #1D232C;">
+        <div class="limited_offer__one ">
+            <img src="	https://errormakesclever.github.io/Nostra-Ecommerce-Js/img/others/offer.jpg" alt="Limited_Offer" class="h-48 w-72 m-10">
+        </div>
+        <div class="limited_offer__two font-bold m-10 text-2xl ">
+            <h1>Limited Offer</h1>
+            <h1>35% OFF on this for the first 30 customers</h1>
+            <button class="flex bg-white text-black p-2 rounded-sm cursor-pointer">Shop Now<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+              </button>
+        </div>
+      </div>
+      <!-- News letter section -->
+      <div class="news_letter font-bold  text-2xl text-center " style="color:#1D232C">
+        <h1>Join our News Letter</h1>
+        <h1>Signup for our email newspaper to get exclusive discounts, updates, and more  </h1>
+        <input type="text" class="block border-2 border-blue-900 w-3/4 ml-24 mr-20 text-center " placeholder="Search items here">
+       <div class="flex justify-center m-4">
+        <button style="background-color: #1D232C;" class="text-white rounded-md w-32 flex items-center p-2 ">Subscribe <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+        </button>
+       </div>
+      </div>
+      <!-- About Section -->
+      <div class="about font-bold text-white text-2xl m-2 " style="background-color:#1D232C;">
+        <div class="about_desc m-10 p-5">
+            <h1 >Nostra</h1>
+            <h1>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</h1>
+        </div>
+        <div class="about_social flex gap-10 ml-16 ">
+            <i class="icon fa-brands fa-instagram cursor-pointer" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-twitter cursor-pointer" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-facebook cursor-pointer" style="color: #ffffff;"></i>
+        </div>
+        <h1 class="ml-16 m-5">@2023 Nostra.com</h1>
+      </div>
+       </div>
+       
+   
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+

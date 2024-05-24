@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practising Grid</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-areas: 
+            "h h h h h"
+            "sb1 m m m sb2"
+            "f f f f f  "
+            ;
+           grid-template-rows:20vh 60vh 20vh;
+           /* vh viewport height and it is specified in percentage */
+          
+        }
+        .header{
+            grid-area: h;
+        }
+        .sidebar1{
+            grid-area: sb1;
+        }
+        .main_content{
+            grid-area: m;
+        }
+        .sidebar2{
+            grid-area: sb2;
+        }
+        .footer{
+            grid-area: f;
+        }
+        .container div{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            border:1px solid black;
+            font-size: medium;
+            font-weight: bold;
+            padding:10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar1">Sidebar1</div>
+        <div class="main_content">Main Content</div>
+        <div class="sidebar2">Sidebar2</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
